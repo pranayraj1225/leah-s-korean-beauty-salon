@@ -606,13 +606,63 @@
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-10 leading-relaxed">
   Experience authentic Korean hair artistry in a private, relaxing suite. Consultations are complimentary. Reserve your time today.
 </p>
-<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-  <a class="inline-flex justify-center items-center px-8 py-4 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest rounded hover:bg-on-surface-variant transition duration-200" href="tel:+19255964050">
-    <span class="material-symbols-outlined mr-2 text-[18px]">call</span> Call to Book
-  </a>
-  <a class="inline-flex justify-center items-center px-8 py-4 bg-transparent border border-primary text-primary font-label-md text-label-md uppercase tracking-widest rounded hover:bg-surface-pure transition duration-200" href="sms:+19255964050">
-    <span class="material-symbols-outlined mr-2 text-[18px]">chat</span> Text Us
-  </a>
+<div class="w-full max-w-2xl mt-8 text-left bg-surface-pure p-8 md:p-12 rounded border border-border-delicate shadow-sm">
+  <form class="space-y-6" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted. We will contact you shortly.');">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label for="name" class="block font-label-sm text-label-sm uppercase tracking-wider text-text-muted mb-2">Full Name</label>
+        <input type="text" id="name" name="name" class="w-full bg-surface-container-low border border-border-delicate rounded px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-on-surface" required placeholder="Jane Doe">
+      </div>
+      <div>
+        <label for="phone" class="block font-label-sm text-label-sm uppercase tracking-wider text-text-muted mb-2">Phone Number</label>
+        <input type="tel" id="phone" name="phone" class="w-full bg-surface-container-low border border-border-delicate rounded px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-on-surface" required placeholder="(925) 555-0123">
+      </div>
+    </div>
+    <div>
+      <label for="service" class="block font-label-sm text-label-sm uppercase tracking-wider text-text-muted mb-2">Service Requested</label>
+      <div class="relative">
+        <select id="service" name="service" class="w-full bg-surface-container-low border border-border-delicate rounded px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-on-surface appearance-none cursor-pointer" required>
+          <option value="" disabled selected>Select a service...</option>
+          <option value="digital_perm">Digital Perm & Setting Perm</option>
+          <option value="volume_magic">Volume Magic Straightening</option>
+          <option value="mens_perm">Men's Down Perm & Shadow Perm</option>
+          <option value="root_perm">Korean Root Perm (Add-on)</option>
+          <option value="womens_cut">Signature Women's K-Cut</option>
+          <option value="mens_cut">Men's Precision K-Cut</option>
+          <option value="other">Other / Consultation</option>
+        </select>
+        <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-text-muted pointer-events-none">expand_more</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label for="date" class="block font-label-sm text-label-sm uppercase tracking-wider text-text-muted mb-2">Preferred Date</label>
+        <input type="date" id="date" name="date" class="w-full bg-surface-container-low border border-border-delicate rounded px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-on-surface" required>
+      </div>
+      <div>
+        <label for="time" class="block font-label-sm text-label-sm uppercase tracking-wider text-text-muted mb-2">Preferred Time</label>
+        <div class="relative">
+          <select id="time" name="time" class="w-full bg-surface-container-low border border-border-delicate rounded px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-on-surface appearance-none cursor-pointer" required>
+            <option value="" disabled selected>Select a time...</option>
+            <option value="morning">Morning (10AM - 12PM)</option>
+            <option value="afternoon">Afternoon (12PM - 4PM)</option>
+            <option value="evening">Evening (4PM - 7PM)</option>
+          </select>
+          <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-text-muted pointer-events-none">expand_more</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <label for="notes" class="block font-label-sm text-label-sm uppercase tracking-wider text-text-muted mb-2">Additional Notes</label>
+      <textarea id="notes" name="notes" rows="3" class="w-full bg-surface-container-low border border-border-delicate rounded px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-on-surface resize-none" placeholder="Tell us about your hair history or any specific requests..."></textarea>
+    </div>
+    <div class="pt-2">
+      <button type="submit" class="w-full flex justify-center items-center px-8 py-4 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest rounded hover:bg-on-surface-variant transition duration-200">
+        Request Appointment
+      </button>
+      <p class="text-center font-body-sm text-body-sm text-text-muted mt-4">We will contact you shortly to confirm your booking.</p>
+    </div>
+  </form>
 </div>
 </div>
 </section>
