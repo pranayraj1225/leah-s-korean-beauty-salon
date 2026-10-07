@@ -1,0 +1,782 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Leah's Korean Beauty Salon | Premier K-Hair Studio Walnut Creek</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-container": "#fecdb5",
+            "surface": "#fbf9f6",
+            "secondary-fixed-dim": "#ecbca5",
+            "surface-tint": "#615e5b",
+            "on-tertiary": "#ffffff",
+            "primary-container": "#1f1d1b",
+            "on-background": "#1b1c1a",
+            "primary-fixed-dim": "#cbc5c2",
+            "tertiary-fixed": "#d8e7d0",
+            "primary": "#040302",
+            "inverse-on-surface": "#f2f0ed",
+            "on-secondary-container": "#7a5542",
+            "surface-cashmere": "#F2EBE4",
+            "on-primary-fixed-variant": "#494644",
+            "surface-container-high": "#eae8e5",
+            "border-delicate": "#E6DDD4",
+            "inverse-primary": "#cbc5c2",
+            "tertiary-container": "#142012",
+            "on-primary": "#ffffff",
+            "on-surface-variant": "#4b4640",
+            "on-primary-container": "#898481",
+            "tertiary": "#000400",
+            "inverse-surface": "#30312f",
+            "on-primary-fixed": "#1d1b19",
+            "surface-dim": "#dbdad7",
+            "background": "#fbf9f6",
+            "on-secondary-fixed": "#2e1507",
+            "error": "#ba1a1a",
+            "secondary": "#7b5643",
+            "on-tertiary-container": "#7b8975",
+            "surface-bright": "#fbf9f6",
+            "outline-variant": "#cec5bd",
+            "tertiary-fixed-dim": "#bccbb5",
+            "on-tertiary-fixed-variant": "#3d4a39",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#603f2e",
+            "on-error-container": "#93000a",
+            "on-secondary": "#ffffff",
+            "surface-container-low": "#f5f3f0",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#e4e2df",
+            "primary-fixed": "#e7e1de",
+            "surface-pure": "#FFFFFF",
+            "text-muted": "#6E6760",
+            "outline": "#7d766f",
+            "on-tertiary-fixed": "#121f10",
+            "on-error": "#ffffff",
+            "secondary-fixed": "#ffdbcb",
+            "surface-container": "#efeeeb",
+            "surface-container-highest": "#e4e2df",
+            "on-surface": "#1b1c1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-lg": "2.5rem",
+            "margin-md": "3rem",
+            "space-xl": "3rem",
+            "gutter": "1.5rem",
+            "margin-lg": "5rem",
+            "margin": "1.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.75rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Inter"],
+            "title-lg": ["Inter"],
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "body-sm": ["Inter"],
+            "display-lg": ["Playfair Display"],
+            "label-md": ["Inter"],
+            "body-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "500" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "400" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "300" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+    .korean-blur-card {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-up.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @keyframes menuSlideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .menu-animate {
+      animation: menuSlideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Shared TopAppBar -->
+<header class="bg-surface/90 dark:bg-primary-container/90 backdrop-blur-md docked full-width top-0 sticky z-40 border-b border-border-delicate dark:border-outline-variant/20">
+<div class="flex justify-between items-center w-full px-margin py-space-sm max-w-7xl mx-auto">
+<!-- Leading Icon / Quick Contact -->
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-1.5 text-primary hover:text-secondary transition-colors duration-200" href="tel:+19255964050">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="hidden sm:inline font-label-md text-label-md uppercase tracking-wider">(925) 596-4050</span>
+</a>
+</div>
+<!-- Center Brand Title (Shared Anchor Token) -->
+<a class="font-headline-md text-headline-md tracking-widest text-primary dark:text-inverse-primary uppercase text-center flex flex-col items-center" href="#">
+<span class="">LEAH K-HAIR</span>
+<span class="font-label-sm text-label-sm tracking-[0.25em] text-text-muted normal-case font-normal -mt-1 hidden sm:block">WALNUT CREEK</span>
+</a>
+<!-- Trailing Action -->
+<div class="flex items-center gap-2">
+<a class="px-3.5 py-1.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded hover:bg-on-surface-variant transition-colors active:opacity-80" href="tel:+19255964050">
+          Book
+        </a>
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-1.5 text-primary hover:text-secondary rounded focus:outline-none" aria-label="Toggle menu">
+  <span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</div>
+
+<!-- Navigation Cluster (Desktop & Mobile Dropdown) -->
+<nav id="main-nav" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto justify-center items-center gap-6 md:gap-8 py-6 md:py-2.5 bg-surface-container-low border-b border-border-delicate z-30 shadow-md md:shadow-none">
+<a class="text-primary dark:text-inverse-primary font-semibold font-label-md text-label-md uppercase hover:text-primary transition-colors mobile-link" href="#studio">Home</a>
+<a class="text-text-muted dark:text-outline-variant font-label-md text-label-md uppercase hover:text-primary transition-colors mobile-link" href="#services">Services</a>
+<a class="text-text-muted dark:text-outline-variant font-label-md text-label-md uppercase hover:text-primary transition-colors mobile-link" href="#about">About</a>
+<a class="text-text-muted dark:text-outline-variant font-label-md text-label-md uppercase hover:text-primary transition-colors mobile-link" href="#lookbook">Lookbook</a>
+<a class="text-text-muted dark:text-outline-variant font-label-md text-label-md uppercase hover:text-primary transition-colors mobile-link" href="#reviews">Client Notes</a>
+<a class="text-text-muted dark:text-outline-variant font-label-md text-label-md uppercase hover:text-primary transition-colors mobile-link" href="#visit">Visit</a>
+</nav>
+
+</header>
+<main>
+<!-- HERO SECTION -->
+<section class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg pt-8 md:pt-16 pb-12 md:pb-24" id="studio">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-gutter-lg items-center">
+<!-- Text Column -->
+<div class="lg:col-span-6 flex flex-col items-start space-y-5">
+<!-- Rating & Verified Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-cashmere rounded-full border border-border-delicate">
+<span class="flex text-[#B58A75] text-[13px] tracking-tighter">
+              ★★★★★
+            </span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-medium">4.9 on Google (24 Verified Reviews)</span>
+</div>
+<!-- Studio Headline -->
+<h1 class="text-primary font-headline-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-display-lg tracking-tight font-normal">
+            Effortless Seoul Style &amp; Precision K-Hair Artistry
+          </h1>
+<!-- Tagline Subhead -->
+<p class="text-on-surface-variant font-body-lg text-body-lg leading-relaxed max-w-xl">
+            Specializing in Korean digital perms, volume magic straightening, trendy two-block &amp; wolf cuts, and customized Asian hair styling in Walnut Creek by Lead Stylist Leah.
+          </p>
+<!-- Core Call to Actions -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto pt-2">
+<a class="inline-flex justify-center items-center gap-2 px-6 py-3.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest rounded hover:bg-neutral-800 transition duration-200 shadow-sm text-center" href="tel:+19255964050">
+<span class="">Reserve Appointment</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<a class="inline-flex justify-center items-center gap-2 px-6 py-3.5 bg-transparent border border-primary text-primary font-label-md text-label-md uppercase tracking-widest rounded hover:bg-surface-cashmere transition duration-200 text-center" href="https://instagram.com/leah_k.hair" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+<span class="">@leah_k.hair</span>
+</a>
+</div>
+<!-- Micro Location Anchor -->
+<div class="flex items-center gap-2 pt-2 text-text-muted">
+<span class="material-symbols-outlined text-[18px]">place</span>
+<span class="font-body-sm text-body-sm">Sola Salons Ygnacio Plaza #30 · Walnut Creek, CA</span>
+</div>
+</div>
+<!-- Visual Master Hero Image -->
+<div class="lg:col-span-6 relative flex justify-center">
+<div class="relative w-[85%] aspect-[4/5] rounded overflow-hidden shadow-sm border border-border-delicate bg-surface-container-high">
+<img alt="Client showcasing Korean soft wave digital perm with natural volume and luminous finish" class="w-full h-full object-cover object-center" src="public/pic1.png">
+<!-- Editorial Caption Tag -->
+
+</div>
+</div>
+</div>
+</section>
+<!-- SIGNATURE SERVICES MENU -->
+<section class="bg-surface-cashmere py-16 md:py-24" id="services">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary block mb-1">Authentic Seoul Techniques</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Signature Services Menu</h2>
+</div>
+
+</div>
+<!-- Filter Tab System -->
+<div class="flex items-center gap-4 overflow-x-auto pb-4 mb-8 border-b border-border-delicate scrollbar-none" id="categoryTabs">
+<button class="category-btn active px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-primary border-b-2 border-primary font-semibold whitespace-nowrap" onclick="filterServices('all', this)">All Treatments</button>
+<button class="category-btn px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-text-muted hover:text-primary transition-colors whitespace-nowrap" onclick="filterServices('perm', this)">Korean Perms</button>
+<button class="category-btn px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-text-muted hover:text-primary transition-colors whitespace-nowrap" onclick="filterServices('cut', this)">Precision Cuts</button>
+<button class="category-btn px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-text-muted hover:text-primary transition-colors whitespace-nowrap" onclick="filterServices('color', this)">Color &amp; Scalp Detox</button>
+</div>
+<!-- Services Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="service-card p-6 bg-surface-pure rounded border border-border-delicate shadow-[0_4px_20px_-2px_rgba(31,29,27,0.04)] flex flex-col justify-between" data-category="perm">
+<div>
+<div class="w-full aspect-[4/3] rounded overflow-hidden mb-4 border border-border-delicate">
+  <img src="images/digital_perm.jpg" class="w-full h-full object-cover" alt="Digital Perm & Setting Perm">
+</div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 bg-secondary-fixed/50 text-on-secondary-fixed rounded-full font-label-sm text-label-sm font-semibold tracking-wider uppercase">Signature</span>
+<span class="font-headline-md text-headline-md text-secondary">$220+</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Digital Perm &amp; Setting Perm</h3>
+</div>
+<div class="pt-4 border-t border-border-delicate flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 2.5 - 3.5 hrs
+              </span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold hover:text-secondary" href="tel:+19255964050">Book Service →</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="service-card p-6 bg-surface-pure rounded border border-border-delicate shadow-[0_4px_20px_-2px_rgba(31,29,27,0.04)] flex flex-col justify-between" data-category="perm">
+<div>
+<div class="w-full aspect-[4/3] rounded overflow-hidden mb-4 border border-border-delicate">
+  <img src="images/volume_magic.jpg" class="w-full h-full object-cover" alt="Volume Magic Straightening">
+</div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 bg-surface-cashmere text-on-surface rounded-full font-label-sm text-label-sm font-semibold tracking-wider uppercase">Glass Finish</span>
+<span class="font-headline-md text-headline-md text-secondary">$250+</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Volume Magic Straightening</h3>
+</div>
+<div class="pt-4 border-t border-border-delicate flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 3 - 4 hrs
+              </span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold hover:text-secondary" href="tel:+19255964050">Book Service →</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="service-card p-6 bg-surface-pure rounded border border-border-delicate shadow-[0_4px_20px_-2px_rgba(31,29,27,0.04)] flex flex-col justify-between" data-category="perm">
+<div>
+<div class="w-full aspect-[4/3] rounded overflow-hidden mb-4 border border-border-delicate">
+  <img src="public/PIC4.png" class="w-full h-full object-cover" alt="Men's Down Perm & Shadow Perm">
+</div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed rounded-full font-label-sm text-label-sm font-semibold tracking-wider uppercase">Men's Top Pick</span>
+<span class="font-headline-md text-headline-md text-secondary">$110+</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Men's Down Perm &amp; Shadow Perm</h3>
+</div>
+<div class="pt-4 border-t border-border-delicate flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 1.5 - 2 hrs
+              </span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold hover:text-secondary" href="tel:+19255964050">Book Service →</a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="service-card p-6 bg-surface-pure rounded border border-border-delicate shadow-[0_4px_20px_-2px_rgba(31,29,27,0.04)] flex flex-col justify-between" data-category="perm">
+<div>
+<div class="w-full aspect-[4/3] rounded overflow-hidden mb-4 border border-border-delicate">
+  <img src="public/pic3.png" class="w-full h-full object-cover" alt="Korean Root Perm (Add-on)">
+</div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 bg-surface-cashmere text-on-surface rounded-full font-label-sm text-label-sm font-semibold tracking-wider uppercase">Root Architecture</span>
+<span class="font-headline-md text-headline-md text-secondary">$90+</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Korean Root Perm (Add-on)</h3>
+</div>
+<div class="pt-4 border-t border-border-delicate flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 60 mins
+              </span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold hover:text-secondary" href="tel:+19255964050">Book Service →</a>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="service-card p-6 bg-surface-pure rounded border border-border-delicate shadow-[0_4px_20px_-2px_rgba(31,29,27,0.04)] flex flex-col justify-between" data-category="cut">
+<div>
+<div class="w-full aspect-[4/3] rounded overflow-hidden mb-4 border border-border-delicate">
+  <img src="images/womens_cut.jpg" class="w-full h-full object-cover" alt="Signature Women's K-Cut">
+</div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 bg-surface-cashmere text-on-surface rounded-full font-label-sm text-label-sm font-semibold tracking-wider uppercase">Editorial</span>
+<span class="font-headline-md text-headline-md text-secondary">$75+</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Signature Women's K-Cut</h3>
+</div>
+<div class="pt-4 border-t border-border-delicate flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 60 mins
+              </span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold hover:text-secondary" href="tel:+19255964050">Book Service →</a>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="service-card p-6 bg-surface-pure rounded border border-border-delicate shadow-[0_4px_20px_-2px_rgba(31,29,27,0.04)] flex flex-col justify-between" data-category="cut">
+<div>
+<div class="w-full aspect-[4/3] rounded overflow-hidden mb-4 border border-border-delicate">
+  <img src="images/mens_cut.jpg" class="w-full h-full object-cover" alt="Men's Precision K-Cut">
+</div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 bg-surface-cashmere text-on-surface rounded-full font-label-sm text-label-sm font-semibold tracking-wider uppercase">Precision</span>
+<span class="font-headline-md text-headline-md text-secondary">$55+</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Men's Precision K-Cut</h3>
+</div>
+<div class="pt-4 border-t border-border-delicate flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 45 mins
+              </span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold hover:text-secondary" href="tel:+19255964050">Book Service →</a>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="service-card p-6 bg-surface-pure rounded border border-border-delicate shadow-[0_4px_20px_-2px_rgba(31,29,27,0.04)] flex flex-col justify-between" data-category="color">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 bg-surface-cashmere text-on-surface rounded-full font-label-sm text-label-sm font-semibold tracking-wider uppercase">Custom Tone</span>
+<span class="font-headline-md text-headline-md text-secondary">Consult</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Milk Brown Color &amp; Scalp Detox</h3>
+<p class="font-label-sm text-label-sm text-text-muted tracking-wider uppercase mb-3">밀크 브라운 / 두피 케어</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Soft Korean milk-tea beige tones, muted ash brown tints, and deeply restorative scalp peeling masks that soothe follicle tension.
+              </p>
+</div>
+<div class="pt-4 border-t border-border-delicate flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Consultation
+              </span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold hover:text-secondary" href="tel:+19255964050">Inquire →</a>
+</div>
+</div>
+</div>
+<!-- Consultation Guarantee Banner -->
+<div class="mt-12 p-6 bg-surface-pure rounded border border-border-delicate flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">content_cut</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary">Uncertain which perm matches your hair density?</h4>
+<p class="font-body-sm text-body-sm text-text-muted">Leah conducts a thorough 1-on-1 hair elasticity analysis before starting every service.</p>
+</div>
+</div>
+<a class="px-5 py-2.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded hover:bg-neutral-800 transition whitespace-nowrap" href="tel:+19255964050">
+            Consult With Leah
+          </a>
+</div>
+</div>
+</section><section class="py-16 md:py-24 bg-surface-container-low border-b border-border-delicate" id="about">
+  <div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-gutter-lg items-center">
+      <!-- Left Column: Portrait & Badge -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative rounded overflow-hidden border border-border-delicate shadow-sm bg-surface-pure">
+          <img class="w-full aspect-[4/5] object-cover object-center" src="images/leah_profile.jpg" alt="Lead Stylist Leah - Master Korean Perm Stylist in Walnut Creek">
+          <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2">
+            <span class="bg-surface-pure/95 backdrop-blur-md px-3 py-1.5 rounded border border-border-delicate text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-sm">
+              Leah · Master Stylist &amp; Founder
+            </span>
+            <span class="bg-primary text-on-primary px-2.5 py-1.5 rounded font-label-sm text-label-sm uppercase tracking-wider shadow-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px]">lock</span> Suite #30
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Biography, Quote & Pillars -->
+      <div class="lg:col-span-7 flex flex-col items-start space-y-6">
+        <div>
+          <span class="font-label-md text-label-md uppercase tracking-widest text-secondary block mb-1">
+            Meet The Artist · Craft &amp; Philosophy
+          </span>
+          <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight font-normal">
+            Seoul Precision Artistry Meets California Warmth
+          </h2>
+          <p class="font-title-lg text-title-lg text-text-muted mt-1 font-normal">
+            1-on-1 Private Studio Sanctuary in Walnut Creek
+          </p>
+        </div>
+
+        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Trained in premier Seoul styling methodologies, Lead Stylist Leah brings authentic Cheongdam-dong hair artistry directly to the East Bay. Specializing in customized Korean digital perms, volume magic straightening, and precision Asian hair contouring, every session is an unhurried, private one-on-one consultation.
+        </p>
+
+        <!-- Stylist Quote Block -->
+        <div class="p-4 md:p-5 bg-surface-cashmere/70 rounded border-l-2 border-secondary">
+          <p class="font-body-md text-body-md text-primary italic leading-relaxed">
+            “Your haircut shouldn't just look stunning when you leave my chair—it should grow out gracefully and style effortlessly at home every single morning.”
+          </p>
+        </div>
+
+
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 w-full sm:w-auto">
+          <a class="inline-flex justify-center items-center gap-2 px-6 py-3 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded hover:bg-neutral-800 transition duration-200 shadow-sm text-center" href="tel:+19255964050">
+            <span class="">Book Dedicated Consultation</span>
+            <span class="material-symbols-outlined text-[16px]">call</span>
+          </a>
+          <a class="inline-flex justify-center items-center gap-2 px-5 py-3 border border-border-delicate bg-surface-pure text-primary font-label-md text-label-md uppercase tracking-wider rounded hover:bg-surface-cashmere transition duration-200 text-center" href="https://instagram.com/leah_k.hair" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[16px]">photo_camera</span>
+            <span class="">@leah_k.hair</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- VISUAL LOOKBOOK / PORTFOLIO SHOWCASE -->
+<section class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-8 md:py-24" id="lookbook">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary block mb-1">Curated Portfolio</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-3">Authentic Client Transformations</h2>
+<p class="font-body-md text-body-md text-text-muted">
+          Real results achieved inside our Walnut Creek suite. Follow <a class="text-primary font-medium underline underline-offset-4 hover:text-secondary" href="https://instagram.com/leah_k.hair" rel="noopener noreferrer" target="_blank">@leah_k.hair</a> on Instagram for daily client transformations.
+        </p>
+</div>
+<!-- Gallery Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Showcase 1: Image 3 Featured -->
+<div class="group relative aspect-[4/5] rounded overflow-hidden border border-border-delicate bg-surface-container-high">
+<img alt="Korean Soft Wave Digital Perm client portrait in salon" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlMUvXuCWgFWIQybrVXaH7lnklgBDkw3NhI8rFJQk7V9fAc6zfTeCN6aPQPRE7jB-bjNDIPUs-9eT5xvPn38D-QD9sdhkkJO25W9UuEfbeuhQRiPTyK6aacwK6H033HXOBLe2AZ2YVCaqDtHqKlXebeC8AzdUn-PauTWmmHhBytAQW3v2O2zjvnsLxoXTcJIqHIB1McWHK0ies-8Yjuxeog7d-4hjlo9AL_n6xi99S">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-on-primary backdrop-blur-[2px]">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Women's Styling</span>
+<h4 class="font-headline-md text-headline-md text-white">Korean Soft Wave Digital Perm</h4>
+<p class="font-body-sm text-body-sm text-surface-variant mt-1">Airy curtain bangs with voluminous heat-set setting perm.</p>
+</div>
+<div class="absolute bottom-3 left-3 bg-surface-pure/90 px-3 py-1 rounded text-primary font-label-sm text-label-sm tracking-wider uppercase group-hover:opacity-0 transition-opacity">
+            Soft Wave Digital Perm
+          </div>
+</div>
+<!-- Showcase 2: Image 4 Featured -->
+<div class="group relative aspect-[4/5] rounded overflow-hidden border border-border-delicate bg-surface-container-high">
+<img alt="Men's Two-Block Cut &amp; Down Perm styling on Asian male model" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5zblb2DX8CJS3tbd3nr9iPfgbRr6CepliAkDRLjHzJ-ItakYFyt9AF6mt7xThOFymqsEv2-i3EyNPL--RmdD3pA6Dy_blYgW4Z8Q3Y2DizI05AziMywoqkDeIe5U4f1x4T5hJZN446qGQW-Kml7u0QK9v1g9DF1C0t7dGRHh1N0xaGKULWfQFOVpsJbDbP7AiJ26OOJzTRPc1aZWt6kBN4GUyYB1986Bias-Fvdq2">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-on-primary backdrop-blur-[2px]">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Men's Grooming</span>
+<h4 class="font-headline-md text-headline-md text-white">Men's Two-Block Cut &amp; Down Perm</h4>
+<p class="font-body-sm text-body-sm text-surface-variant mt-1">Side profile discipline paired with effortless crown movement.</p>
+</div>
+<div class="absolute bottom-3 left-3 bg-surface-pure/90 px-3 py-1 rounded text-primary font-label-sm text-label-sm tracking-wider uppercase group-hover:opacity-0 transition-opacity">
+            Men's Two-Block &amp; Down Perm
+          </div>
+</div>
+<!-- Showcase 3: Editorial Studio Detail -->
+<div class="group relative aspect-[4/5] rounded overflow-hidden border border-border-delicate bg-surface-container-high hidden lg:block">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Editorial interior aesthetic view of a serene Seoul-inspired boutique hair salon station with warm oak wood accents, minimalist mirrors, soft beige boucle seating, and professional Japanese digital perm machines softly lit by warm indirect morning sunshine. Peaceful luxury sanctuary atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3dSMm8AYiRvaK6qfFgKkPqvAGtyd7CqorQk6Gh4dEdKXrp0jBWvFm_Eq7-s4JHIC53akcESFvnreLjVHtQQoSSw5-d47SN04H6yPaZrPA5PNUyglll-Ok0OKSrjxi6Naluhy3wO1x7HNt1QRnlWFgeFPxUpPjwLgSWk7mNhqIj4HcVPQt76Grsq5m21sSkx0XVil_r8kWa0to5EsXbxe4d9ru2f-zZUJxeRY84Zvx">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-on-primary backdrop-blur-[2px]">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Studio Sanctuary</span>
+<h4 class="font-headline-md text-headline-md text-white">Private Sola Suite Experience</h4>
+<p class="font-body-sm text-body-sm text-surface-variant mt-1">One-on-one appointments without salon rush or divided focus.</p>
+</div>
+<div class="absolute bottom-3 left-3 bg-surface-pure/90 px-3 py-1 rounded text-primary font-label-sm text-label-sm tracking-wider uppercase group-hover:opacity-0 transition-opacity">
+            Private Suite #30
+          </div>
+</div>
+</div>
+<!-- Instagram CTA Strip -->
+<div class="mt-8 text-center">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md uppercase tracking-wider text-primary hover:text-secondary py-2 border-b border-primary hover:border-secondary transition-colors" href="https://instagram.com/leah_k.hair" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span class="">Explore 150+ Styles on Instagram @leah_k.hair</span>
+</a>
+</div>
+</section>
+<!-- VERIFIED GOOGLE REVIEWS SECTION -->
+<section class="bg-surface-cashmere py-16 md:py-24" id="reviews">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="text-[#B58A75] text-[18px]">★★★★★</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">5.0 Star Rating</span>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Verified Client Experiences</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-surface-pure rounded-full border border-border-delicate font-label-sm text-label-sm uppercase tracking-wider text-text-muted">
+              Google Verified Salon
+            </span>
+</div>
+</div>
+<!-- Review Bento Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="p-8 bg-surface-pure rounded border border-border-delicate flex flex-col justify-between shadow-[0_4px_20px_-2px_rgba(31,29,27,0.04)]">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[#B58A75] text-[15px] tracking-tight">★★★★★</span>
+<span class="px-2 py-0.5 bg-surface-cashmere rounded text-secondary font-label-sm text-label-sm uppercase tracking-wider">Talented &amp; Precise</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface italic leading-relaxed mb-6">
+                “Leah did an amazing job on my hair! She was super friendly and made the whole experience really comfortable and easy. Highly recommend her!”
+              </p>
+</div>
+<div class="pt-4 border-t border-border-delicate flex items-center justify-between">
+<div>
+<span class="font-title-lg text-title-lg text-primary block">Ricky Reynoso</span>
+<span class="font-body-sm text-body-sm text-text-muted">Google Review · Verified Visit</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[24px]">verified</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-8 bg-surface-pure rounded border border-border-delicate flex flex-col justify-between shadow-[0_4px_20px_-2px_rgba(31,29,27,0.04)]">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[#B58A75] text-[15px] tracking-tight">★★★★★</span>
+<span class="px-2 py-0.5 bg-tertiary-fixed rounded text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider">Korean Perm Specialist</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface italic leading-relaxed mb-6">
+                “I’ve always struggled with my short hair sticking up, but she gave me a thoughtful haircut and perm that was exactly right. Leah is so kind!”
+              </p>
+</div>
+<div class="pt-4 border-t border-border-delicate flex items-center justify-between">
+<div>
+<span class="font-title-lg text-title-lg text-primary block">Chi Park</span>
+<span class="font-body-sm text-body-sm text-text-muted">Google Review · Verified Visit</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[24px]">verified</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-8 bg-surface-pure rounded border border-border-delicate flex flex-col justify-between shadow-[0_4px_20px_-2px_rgba(31,29,27,0.04)]">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[#B58A75] text-[15px] tracking-tight">★★★★★</span>
+<span class="px-2 py-0.5 bg-secondary-fixed/50 rounded text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider">Warm &amp; Attentive</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface italic leading-relaxed mb-6">
+                “Leah is amazing! She did my perm and haircut exactly how I wanted, and the results look great. Very nice, professional, and makes you feel comfortable.”
+              </p>
+</div>
+<div class="pt-4 border-t border-border-delicate flex items-center justify-between">
+<div>
+<span class="font-title-lg text-title-lg text-primary block">Ilyas Tachmuradov</span>
+<span class="font-body-sm text-body-sm text-text-muted">Google Review · Verified Visit</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[24px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STUDIO LOCATION & HOURS -->
+<section class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-8 md:py-24" id="visit">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-gutter-lg items-stretch">
+<!-- Details Card -->
+<div class="lg:col-span-6 bg-surface-pure p-8 md:p-10 rounded border border-border-delicate flex flex-col justify-between">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary block mb-2">Visit The Studio</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Walnut Creek Sanctuary</h2>
+<!-- Address Block -->
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded bg-surface-cashmere flex items-center justify-center text-primary mt-1">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary">Location</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                    Sola Salons Ygnacio Plaza<br>
+                    1853 Ygnacio Valley Rd #30<br>
+                    Walnut Creek, CA 94598
+                  </p>
+<p class="font-body-sm text-body-sm text-secondary mt-1 font-medium">
+                    ✓ Ample complimentary parking in Ygnacio Plaza shopping center
+                  </p>
+</div>
+</div>
+<!-- Working Hours -->
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded bg-surface-cashmere flex items-center justify-center text-primary mt-1">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary">Studio Hours</h4>
+<div class="font-body-md text-body-md text-on-surface-variant mt-1 space-y-0.5">
+<p class="flex justify-between gap-6"><span class="">Tuesday – Saturday:</span> <span class="font-medium text-primary">10:00 AM – 7:00 PM</span></p>
+<p class="flex justify-between gap-6 text-text-muted"><span class="">Sunday &amp; Monday:</span> <span class="">Closed (By Special Request)</span></p>
+</div>
+</div>
+</div>
+<!-- Contact & Policy -->
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded bg-surface-cashmere flex items-center justify-center text-primary mt-1">
+<span class="material-symbols-outlined text-[18px]">phone_iphone</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary">Direct Line &amp; Consultations</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                    Call or text Leah directly at <a class="text-primary font-semibold hover:underline" href="tel:+19255964050">(925) 596-4050</a>
+</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">
+                    Appointments strictly dedicated one-on-one. Walk-ins subject to stylist availability.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Direction & Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-3 pt-8 mt-6 border-t border-border-delicate">
+<a class="flex-1 inline-flex justify-center items-center gap-2 px-5 py-3.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded hover:bg-neutral-800 transition" href="https://maps.google.com/?q=1853+Ygnacio+Valley+Rd+30+Walnut+Creek+CA+94598" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">navigation</span>
+<span class="">Open in Google Maps</span>
+</a>
+<a class="inline-flex justify-center items-center gap-2 px-5 py-3.5 border border-primary text-primary font-label-md text-label-md uppercase tracking-wider rounded hover:bg-surface-cashmere transition" href="tel:+19255964050">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="">Direct Call</span>
+</a>
+</div>
+</div>
+<!-- Location Graphic / Map Representation -->
+<div class="lg:col-span-6 relative rounded overflow-hidden border border-border-delicate bg-surface-container-high min-h-[380px] flex flex-col justify-between p-6">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Modern architectural map graphic and clean aesthetic overhead view of Walnut Creek California suburban district around Ygnacio Valley Road, showing refined neutral architectural tones, soft greenery, and subtle road vectors in a beige alabaster minimalist map design style." data-location="Walnut Creek" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA6FieGWgCKvULKi4rSTWiAFB1fUO1EoIcv1zPiuvRqX_RXmjiQAaX7z3iyp6cW2v_fWk6WTX9J3vtKZ11KiVlxBd1ux2meDV4lNdzsBkMh486--e8-G2_y7cKHBTGNc6-Su9pTjM0PkZRgA-KYH4AvL2y1MLlWxDlOppXywRepPn8wuD7G48pAzReezTjigzFzN4NpWBUqawpfWkVFMUuzBkrKIiHdeP49z_E-yspO&quot;);"></div>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px]"></div>
+<!-- Studio Pin Callout -->
+<div class="relative z-10 self-start p-4 bg-surface-pure/95 rounded border border-border-delicate max-w-xs shadow-md">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">store</span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">Suite 30 @ Sola Salons</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">
+              Located conveniently within Ygnacio Plaza next to Peet's Coffee and local dining.
+            </p>
+</div>
+<!-- Floating Badge -->
+<div class="relative z-10 self-end p-3 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase tracking-widest flex items-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-[16px]">local_parking</span>
+<span class="">Free Shopping Center Parking</span>
+</div>
+</div>
+</div>
+</section>
+<!-- PHILOSOPHY / ABOUT LEAH CALLOUT -->
+<section class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg pb-16 md:pb-24">
+
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="bg-surface-pure border-t border-border-delicate py-12">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+<div>
+<p class="font-headline-md text-headline-md tracking-widest text-primary uppercase">LEAH K-HAIR</p>
+</div>
+<div class="flex items-center gap-6">
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted hover:text-primary" href="#studio">Studio</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted hover:text-primary" href="#services">Services</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted hover:text-primary" href="#about">About</a><a class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted hover:text-primary" href="#lookbook">Lookbook</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted hover:text-primary" href="#visit">Visit</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold hover:underline" href="https://instagram.com/leah_k.hair" rel="noopener noreferrer" target="_blank">@leah_k.hair</a>
+</div>
+<p class="font-label-sm text-label-sm text-text-muted">
+        © <span id="currentYear" class="">2026</span> Leah's Korean Beauty Salon. All rights reserved.
+      </p>
+</div>
+</footer>
+
+<!-- Interactive JavaScript for Category Tabs and Dynamics -->
+<script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      const nav = document.getElementById('main-nav');
+      nav.classList.toggle('hidden');
+      nav.classList.toggle('flex');
+      if (!nav.classList.contains('hidden')) {
+        nav.classList.add('menu-animate');
+      } else {
+        nav.classList.remove('menu-animate');
+      }
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 768) {
+          document.getElementById('main-nav').classList.add('hidden');
+          document.getElementById('main-nav').classList.remove('flex');
+        }
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll('section').forEach(el => {
+        el.classList.add('fade-up');
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    });
+
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    function filterServices(category, btnElement) {
+      // Update Tab Styles
+      const tabs = document.querySelectorAll('.category-btn');
+      tabs.forEach(tab => {
+        tab.classList.remove('active', 'border-b-2', 'border-primary', 'font-semibold', 'text-primary');
+        tab.classList.add('text-text-muted');
+      });
+      btnElement.classList.add('active', 'border-b-2', 'border-primary', 'font-semibold', 'text-primary');
+      btnElement.classList.remove('text-text-muted');
+
+      // Filter Cards
+      const cards = document.querySelectorAll('.service-card');
+      cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (category === 'all' || itemCat === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+
+
+
+
+
+</body></html>
